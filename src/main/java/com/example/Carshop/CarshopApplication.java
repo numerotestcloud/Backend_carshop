@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @EntityScan("com.example.Carshop.Model")
 @SpringBootApplication
 public class CarshopApplication {
+
+	public String PORT = System.getenv("PORT");
 	public static void main(String[] args) {
 		SpringApplication.run(CarshopApplication.class, args);
 	}
